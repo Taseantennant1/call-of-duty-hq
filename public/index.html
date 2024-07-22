@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Of Duty HQ</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Call Of Duty HQ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                    <li><a href="#" onclick="showSection('staff')">Staff</a></li>
+                    <li><a href="#" onclick="showSection('members')">Server Info</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section active">
+        <img src="new-banner.png" alt="Call of Duty HQ Banner" class="banner">
+        <div class="container">
+            <h2>Welcome to Call Of Duty HQ</h2>
+            <p>Join our community of Call of Duty enthusiasts!</p>
+
+            <section id="events">
+                <h3>Upcoming Events</h3>
+                <ul id="events-list">
+                    <!-- Events will be dynamically loaded here -->
+                </ul>
+            </section>
+
+            <section id="roles">
+                <h3>Roles We Offer</h3>
+                <ul id="roles-list">
+                    <li>Founder - Leader and creator of the community</li>
+                    <li>Admin - Manage and oversee the server</li>
+                    <li>Moderator - Assist in moderating the community</li>
+                    <li>PS5 - PlayStation 5 players</li>
+                    <li>Xbox - Xbox players</li>
+                    <li>PC - PC players</li>
+                    <li>Member - Participate in discussions and events</li>
+                    <li>Warzone - Warzone players</li>
+                    <li>Ranked - Ranked match players</li>
+                    <li>Zombies - Zombie mode enthusiasts</li>
+                    <!-- Add more roles as needed -->
+                </ul>
+            </section>
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This is a community for Call of Duty enthusiasts to come together, share tips, and play together.</p>
+        </div>
+    </section>
+    
+    <section id="staff" class="section">
+        <div class="container">
+            <h2>Our Staff</h2>
+            <div id="staff-members"></div>
+        </div>
+    </section>
+    
+    <section id="members" class="section">
+        <div class="container">
+            <h2>Server Information</h2>
+            <p>Total Members: <span id="member-count"></span></p>
+        </div>
+    </section>
+    
+    <section id="invite" class="section">
+        <div class="container">
+            <h2>Join Us</h2>
+            <p><a href="https://discord.gg/fagKKDfu" target="_blank">Invite Link</a></p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Call Of Duty HQ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="error-message"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
